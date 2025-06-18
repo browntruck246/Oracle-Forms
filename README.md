@@ -98,6 +98,72 @@
 - For a dev/test environment, **"Forms Builder Only"** installation is sufficient.
 - For production or web deployment, full **Forms + WebLogic** setup is required.
 
+# Oracle Forms: Starting, WebLogic Server Role, and Configuration
+
+## How to Start Oracle Forms
+
+To start Oracle Forms (after installation and configuration):
+
+1. **For Development (using Form Builder):**
+   - Go to  
+     `Start Menu > Oracle > [Oracle Home] > Forms Builder`
+   - Or run  
+     `C:\Oracle\Middleware\Oracle_Home\forms\bin\frmbld.exe`
+
+2. **For Running Forms in a Browser (Web Deployment):**
+   - Start the Node Manager (if used).
+   - Start the WebLogic Admin Server (usually from `Start Menu > Oracle > [Oracle Home] > Start Admin Server`).
+   - Start the Forms Managed Server.
+   - Access Forms via your browser (URL is usually like `http://localhost:9001/forms/frmservlet`).
+
+---
+
+## Why Do You Need WebLogic Server?
+
+- **WebLogic Server** is Oracle’s Java EE application server.
+- **Oracle Forms (12c and up)** runs as a web application inside WebLogic Server.
+- WebLogic manages:
+  - Application deployment
+  - Security
+  - Session management
+  - HTTP/HTTPS requests
+  - Integration with other Oracle Middleware
+
+**Without WebLogic**, Oracle Forms cannot be served to browsers or users; it’s an essential middleware layer for web-based forms.
+
+---
+
+## How to Configure Oracle Forms
+
+**After installing Oracle Forms and WebLogic:**
+
+1. **Run the Configuration Wizard:**
+   - Find it under  
+     `Start Menu > Oracle > [Oracle Home] > Tools > Configuration Wizard`
+2. **Choose “Create a New Domain”:**
+   - Select **Oracle Forms** (and Reports if required).
+3. **Domain Setup:**
+   - Set domain name and location.
+   - Create admin user/password.
+   - Set server ports (default: 7001 for Admin Server, 9001 for Forms Managed Server).
+4. **Complete the Configuration:**
+   - The wizard creates and configures the necessary WebLogic domain and deploys Forms.
+5. **Start Services:**
+   - Start Admin Server and Forms Managed Server.
+   - Optionally, configure Node Manager for advanced management.
+
+**You can customize Forms configuration using `formsweb.cfg` and `default.env` in:**
+```
+[Middleware_Home]/user_projects/domains/[domain_name]/config/fmwconfig/servers/WLS_FORMS/applications/formsapp_12.2.1/config
+```
+
+---
+
+## References
+
+- [Oracle Forms 12c Installation & Configuration Guide](https://docs.oracle.com/en/middleware/developer-tools/forms/12.2.1.4/instl/index.html)
+- [Oracle WebLogic Server Documentation](https://docs.oracle.com/en/middleware/fusion-middleware/weblogic-server/12.2.1.4/index.html)
+
 # Referneces
 * [Oracle Forms Tutorial || Oracle Forms Training for beginners || Learning Tube - YouTube](https://www.youtube.com/watch?v=xPktL8oSR_s)
 * [Oracle Forms Tutorial - Chanikya Konda - YouTube](https://www.youtube.com/playlist?list=PLGfV_goH6Dpz1TWMOypRILJ1LbaBAbtxk)
