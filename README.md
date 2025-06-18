@@ -1,5 +1,11 @@
 # Oracle-Forms
 
+# Referneces
+* [Oracle Forms Tutorial || Oracle Forms Training for beginners || Learning Tube - YouTube](https://www.youtube.com/watch?v=xPktL8oSR_s)
+* [Oracle Forms Tutorial - Chanikya Konda - YouTube](https://www.youtube.com/playlist?list=PLGfV_goH6Dpz1TWMOypRILJ1LbaBAbtxk)
+* [Oracle PL/SQL - Forms tutorials - Francois Dearelle](https://sheikyerbouti.developpez.com/index_en/)
+* [Oracle Forms12c - Install Oracle Forms and Reports 12c - YouTube](https://www.youtube.com/watch?v=-DLE040nU2c&list=PLQfBfu7k8exAjg0-lIZUYkeE1DgpsePTA&index=7)
+
 # Step-by-Step Guide to Install Oracle Forms and Start Oracle Form Builder
 
 ## 1. Prerequisites
@@ -163,10 +169,3 @@ To start Oracle Forms (after installation and configuration):
 
 - [Oracle Forms 12c Installation & Configuration Guide](https://docs.oracle.com/en/middleware/developer-tools/forms/12.2.1.4/instl/index.html)
 - [Oracle WebLogic Server Documentation](https://docs.oracle.com/en/middleware/fusion-middleware/weblogic-server/12.2.1.4/index.html)
-
-# Referneces
-* [Oracle Forms Tutorial || Oracle Forms Training for beginners || Learning Tube - YouTube](https://www.youtube.com/watch?v=xPktL8oSR_s)
-* [Oracle Forms Tutorial - Chanikya Konda - YouTube](https://www.youtube.com/playlist?list=PLGfV_goH6Dpz1TWMOypRILJ1LbaBAbtxk)
-* [Oracle PL/SQL - Forms tutorials - Francois Dearelle](https://sheikyerbouti.developpez.com/index_en/)
-* [Oracle Forms12c - Install Oracle Forms and Reports 12c - YouTube](https://www.youtube.com/watch?v=-DLE040nU2c&list=PLQfBfu7k8exAjg0-lIZUYkeE1DgpsePTA&index=7)
-  
