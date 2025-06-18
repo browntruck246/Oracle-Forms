@@ -1,5 +1,13 @@
 # Oracle-Forms
 
+## Focus Areas
+* [Associate](https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-certified-associate-credential)
+* [Admin](https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-administrator-credential)
+* [Platform Developer I]( https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-platform-developer-i-credential)
+* [Platform App Builder](https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-platform-app-builder-credential)
+* [Admin Advanced]( https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-advanced-administrator-credential)
+  
+
 **Oracle Forms** is a rapid application development tool for building enterprise applications that interact with Oracle databases. It enables developers to create, deploy, and manage data-driven applications with rich user interfaces using PL/SQL and a drag-and-drop form builder environment.
 
 ## Key Features
