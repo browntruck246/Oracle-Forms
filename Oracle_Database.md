@@ -1,3 +1,81 @@
+# Oracle Database Instance
+Gere’s a high-level overview of configuring a basic Oracle Database instance on Linux:
+
+## 1. Prerequisites
+* Ensure your system meets Oracle’s minimum requirements.
+* Install required OS packages (for RHEL/CentOS, for example).
+* Set kernel parameters and resource limits as per Oracle guidelines.
+
+## 2. Install Oracle Database Software
+* Download Oracle Database from Oracle’s official site.
+* Extract and install the software
+
+``` bash
+unzip linux.x64_193000_db_home.zip -d /u01/app/oracle/product/19.0.0/dbhome_1
+cd /u01/app/oracle/product/19.0.0/dbhome_1
+./runInstaller
+```
+* Follow the GUI or silent installation prompts.
+
+## 3. Run Configuration Scripts
+* As root, run scripts prompted at the end of installation:
+``` bash
+/u01/app/oraInventory/orainstRoot.sh
+/u01/app/oracle/product/19.0.0/dbhome_1/root.sh
+```
+
+## 4. Create a Database
+* Use Database Configuration Assistant (DBCA)
+  ``` bash
+  dbca
+  ```
+Or in silent mode:
+
+``` bash
+dbca -silent -createDatabase -templateName General_Purpose.dbc \
+  -gdbname orcl -sid orcl -responseFile NO_VALUE \
+  -characterSet AL32UTF8 -memoryPercentage 30 \
+  -emConfiguration DBEXPRESS -emExpressPort 5500 \
+  -dbsnmpPassword password -sysPassword password -systemPassword password
+```
+## 5. Configure Listener 
+* Use Oracle Net Configuration Assistant (netca):
+
+  ``` bash
+  netca
+  ```
+Or edit listener.ora and start the listener:
+
+``` bash
+lsnrctl start
+```
+
+## 6. Set Environment Variables
+Add to **.bash_profile** of the oracle user:
+
+  ``` bash
+export ORACLE_HOME=/u01/app/oracle/product/19.0.0/dbhome_1
+export ORACLE_SID=orcl
+export PATH=$ORACLE_HOME/bin:$PATH
+```
+
+## 7. Test the Database
+
+``` bash
+sqlplus / as sysdba
+```
+You should be connected to the database.
+
+## 
+
+# References
+
+- [Oracle Forms 12c Installation & Configuration Guide](https://docs.oracle.com/en/middleware/developer-tools/forms/12.2.1.4/instl/index.html)
+- [Oracle WebLogic Server Documentation](https://docs.oracle.com/en/middleware/fusion-middleware/weblogic-server/12.2.1.4/index.html)
+
+
+
+
 # Create Oracle Database
 
 Automating Oracle database creation can save tons of time and reduce human error, especially in enterprise environments. Here are some solid approaches depending on your tooling preferences and infrastructure:   
