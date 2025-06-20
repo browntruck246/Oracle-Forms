@@ -19,11 +19,22 @@
 
 **Oracle Forms** is widely used in large organizations for developing robust, scalable, and secure applications that require efficient data management and user interaction.
 
-# Referneces
+# References
 * [Oracle Forms Tutorial || Oracle Forms Training for beginners || Learning Tube - YouTube](https://www.youtube.com/watch?v=xPktL8oSR_s)
 * [Oracle Forms Tutorial - Chanikya Konda - YouTube](https://www.youtube.com/playlist?list=PLGfV_goH6Dpz1TWMOypRILJ1LbaBAbtxk)
 * [Oracle PL/SQL - Forms tutorials - Francois Dearelle](https://sheikyerbouti.developpez.com/index_en/)
 * [Oracle Forms12c - Install Oracle Forms and Reports 12c - YouTube](https://www.youtube.com/watch?v=-DLE040nU2c&list=PLQfBfu7k8exAjg0-lIZUYkeE1DgpsePTA&index=7)
 
 ---
+
+# Context
+* [Configuration](./Configuration.md)
+* [Install Oracle Forms](./Install_Oracle_Forms.md)
+* [Oracle Database](./Oracle_Database.md)
+* [Sqlnet.ora](./Sqlnet.ora.md)
+* [Starting](./Starting.md)
+* [Transparent Network Substrate (TNS)](./Transparent_Network_Substrate.md)
+* [WebLogic Server](./WebLogic_Server.md)
+
+        
 
