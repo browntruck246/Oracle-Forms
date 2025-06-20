@@ -77,7 +77,7 @@ where <configuration> is a section in formsweb.cfg.
 * Set up security in WebLogic Console for user access.
 
 # References
-* [Oracle Forms Installation and Configuration Guide (12c)](https://docs.oracle.com/middleware/1221/formsandreports/install-fnr/FRINS.pdf))
+* [Oracle Forms Installation and Configuration Guide (12c)](https://docs.oracle.com/middleware/1221/formsandreports/install-fnr/FRINS.pdf)
 * [Oracle Forms Deployment Guide](https://docs.oracle.com/middleware/1221/formsandreports/deploy-forms/toc.htm)
 * [Oracle Forms Configuration Files Reference](https://docs.oracle.com/en/middleware/developer-tools/forms/12.2.1.4/working-forms/configuration-files.html)
 
