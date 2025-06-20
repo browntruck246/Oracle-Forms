@@ -64,7 +64,7 @@ For schema-level automation, Oracle’s SQLcl tool now supports Projects, which 
 It’s great for CI/CD pipelines and integrates well with Git. More on that [here](https://www.thatjeffsmith.com/archive/2025/05/sqlcl-projects-automated-oracle-database-app-deployments/).
 
 # References
-* [How to Create Oracle Database using DBCA? - Rajasekhar Amudala - YouTube](https://www.youtube.com/watch?v=fLVHiTSLXA8)
+* [Oracle 12c Complete installation Demo - Dooly Tech (Suresh Dooly) - YouTube]([https://www.youtube.com/watch?v=fLVHiTSLXA8](https://www.youtube.com/watch?v=FeGZMYfGtyY))
 
 
 
