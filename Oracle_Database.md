@@ -63,6 +63,46 @@ For schema-level automation, Oracle’s SQLcl tool now supports Projects, which 
 
 It’s great for CI/CD pipelines and integrates well with Git. More on that [here](https://www.thatjeffsmith.com/archive/2025/05/sqlcl-projects-automated-oracle-database-app-deployments/).
 
+# {ORACLE_BASE}
+
+**{ORACLE_BASE}** is an environment variable used in Oracle Database installations. It defines the root directory for all Oracle software installations and administrative files for a given Oracle software owner (such as the oracle user).
+
+## In Detail:
+
+* Purpose:
+** ORACLE_BASE** serves as the top-level directory for Oracle installations, separating Oracle software files from database files and diagnostic logs.
+  
+* Typical Structure:
+Inside ORACLE_BASE, you’ll find subdirectories for product software (ORACLE_HOME), configuration files, logs, backups, etc.
+
+* Default Value (Example):
+
+``` bash
+/u01/app/oracle
+```
+
+Here’s a typical structure:
+```
+/u01/app/oracle/         <- ORACLE_BASE
+    └── product/19.0.0/  <- ORACLE_HOME (software for version 19c)
+    └── diag/            <- Diagnostic files
+    └── admin/           <- Database administration files
+```
+
+How It’s Used:
+
+* When installing or configuring Oracle, you set ORACLE_BASE before running the installer.
+* Oracle recommends keeping ORACLE_BASE consistent across installations for easier management.
+  
+How to Set:
+
+``` bash
+export ORACLE_BASE=/u01/app/oracle
+```
+**Summary:**
+**{ORACLE_BASE}** is the root directory for Oracle installations and is a foundational part of Oracle’s directory structure and file organization.
+
+
 # References
 * [How to Create Oracle Database using DBCA? - Rajasekhar Amudala  - YouTube ](https://www.youtube.com/watch?v=fLVHiTSLXA8)
 * [Oracle 12c Complete installation Demo - Dooly Tech (Suresh Dooly) - YouTube](https://www.youtube.com/watch?v=FeGZMYfGtyY)
