@@ -1,5 +1,7 @@
 # Oracle-Forms
 
+* [Amazon Book](https://www.amazon.com/Oracle-Developer-Advanced-Forms-Reports/dp/0072120487)   
+
 **Oracle Forms** is a rapid application development tool for building enterprise applications that interact with Oracle databases. It enables developers to create, deploy, and manage data-driven applications with rich user interfaces using PL/SQL and a drag-and-drop form builder environment.
 
 ## Key Features
