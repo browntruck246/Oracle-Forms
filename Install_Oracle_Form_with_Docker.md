@@ -2,6 +2,9 @@ Setting up Oracle Forms in a Docker container is a complex process because Oracl
 
 Below is an example Dockerfile and a brief startup script to guide you. You must manually download the Oracle WebLogic installer and Oracle Forms installer from Oracle’s site and place them in the build context.
 
+## Download References
+* [Install Oracle WebLogic Server 12c](https://docs.oracle.com/en/industries/health-sciences/empirica-signal/9.2/installationinstructions/install-oracle-weblogic-server-12c.html)
+
 **Note:**
 
 * Both products are large, require significant resources, and typically run in separate containers in production.
